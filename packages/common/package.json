@@ -8,7 +8,9 @@
   },
   "main": "index.ts",
   "scripts": {
-    "build" : "tsc"
+    "build" : "tsc",
+    "test": "jest",
+    "test-clean": "rm -rf ./.cache"
   },
   "keywords": [],
   "author": "Woona Kim <work@woonakim.info>",
@@ -23,6 +25,32 @@
   },
   "devDependencies": {
     "@types/tough-cookie": "^4.0.2",
-    "@types/iconv": "^3.0.1"
+    "@types/iconv": "^3.0.1",
+    "@types/jest":"^27.4.1",
+    "dotenv": "^10.0.0",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.0.7"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.test\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "setupFiles": [
+      "dotenv/config"
+    ],
+    "globals": {
+      "ts-jest": {
+        "diagnostics": true,
+        "useESM": true,
+        "tsconfig": "tsconfig.json"
+      }
+    }
   }
 }
