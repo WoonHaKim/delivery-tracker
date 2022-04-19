@@ -1,0 +1,25 @@
+{
+  "name": "@delivery-tracker/common",
+  "version": "0.1.0",
+  "description": "Delivery and Shipping Tracking Service - Common",
+  "homepage": "https://github.com/shlee322/delivery-tracker",
+  "bugs": {
+    "url": "https://github.com/shlee322/delivery-tracker/issues"
+  },
+  "main": "index.ts",
+  "scripts": {
+    "build" : "tsc"
+  },
+  "keywords": [],
+  "author": "Woona Kim <work@woonakim.info>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "html-entities": "^2.3.3",
+    "iconv": "^2.3.0",
+    "jsdom": "^13.0.0",
+    "request": "^2.85.0"
+  },
+  "devDependencies": {
+  }
+}
