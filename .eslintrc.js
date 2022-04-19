@@ -1,23 +1,20 @@
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es2021: true,
     node: true,
   },
   extends: [
     'eslint:recommended',
-    'plugin:vue/essential',
-    'airbnb-base',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 13,
     sourceType: 'module',
   },
-  plugins: ['vue'],
+  plugins: ['@typescript-eslint', 'vue'],
   rules: {},
 };

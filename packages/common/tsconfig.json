@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "~types" : ["./types.ts"],
+      "~utils/**" : ["./utils/**"],
+      "~carriers/**" :[ "./carriers/**"],
+    }
+  }
+}

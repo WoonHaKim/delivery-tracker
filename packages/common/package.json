@@ -16,10 +16,13 @@
   "dependencies": {
     "axios": "^0.26.1",
     "html-entities": "^2.3.3",
-    "iconv": "^2.3.0",
-    "jsdom": "^13.0.0",
-    "request": "^2.85.0"
+    "iconv": "^3.0.1",
+    "jsdom": "^19.0.0",
+    "cheerio" :"^1.0.0-rc.10",
+    "tough-cookie" :"^4.0.0"
   },
   "devDependencies": {
+    "@types/tough-cookie": "^4.0.2",
+    "@types/iconv": "^3.0.1"
   }
 }
