@@ -108,7 +108,7 @@ async function getTrack(trackId: string) {
     shippingInformation.to = {
       name: `${informationTable[0].rcvrNm.substring(0, 1)}*`,
       time:
-        shippingInformation.state.id === 'delivered' &&
+        shippingInformation.state?.id === 'delivered' &&
         shippingInformation?.progresses?.length
           ? shippingInformation?.progresses[
               // eslint-disable-next-line no-unsafe-optional-chaining

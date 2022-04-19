@@ -34,7 +34,7 @@ export type TrackingInformation = {
     name?: string | undefined | null;
     time?: Date | ISODateString | undefined | null;
   };
-  state: DeliveryProgressState;
+  state?: DeliveryProgressState | null;
   progresses?: Progress[];
 };
 
